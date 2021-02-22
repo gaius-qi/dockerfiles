@@ -27,4 +27,6 @@ ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 # prepare go-env
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" "$GOPATH/pkg" && chmod -R 777 "$GOPATH"
 
+ADD ./_ssh /root/.ssh/
+
 CMD ["/usr/bin/bash"]
