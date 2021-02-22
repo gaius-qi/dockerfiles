@@ -1,2 +1,2 @@
 # dockerfiles
-A collection of dockerfiles
+A collection of dockerfiles.
