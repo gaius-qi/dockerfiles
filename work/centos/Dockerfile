@@ -25,9 +25,8 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 	&& rm golang.tar.gz
 
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
-
-# prepare go-env
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" "$GOPATH/pkg" && chmod -R 777 "$GOPATH"
+ENV GOPROXY https://mirrors.aliyun.com/goproxy,direct
 
 # containerd
 ADD ./containerd/cri-containerd-1.1.0.linux-amd64.tar.gz /
