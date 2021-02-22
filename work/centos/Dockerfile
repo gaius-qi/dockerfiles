@@ -11,6 +11,7 @@ ENV GOPATH /go
 RUN yum -y install \
       epel-release \
       gcc \
+      wget \
       git \
       curl \
       vim \
@@ -27,6 +28,9 @@ ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 # prepare go-env
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" "$GOPATH/pkg" && chmod -R 777 "$GOPATH"
 
-ADD ./_ssh /root/.ssh/
+# containerd
+ADD ./containerd/cri-containerd-1.1.0.linux-amd64.tar.gz /
+
+ADD ./ssh /root/.ssh/
 
 CMD ["/usr/bin/bash"]
