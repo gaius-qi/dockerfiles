@@ -35,5 +35,6 @@ ADD ./containerd/cri-containerd-1.1.0.linux-amd64.tar.gz /
 RUN mkdir /etc/containerd && touch /etc/containerd/config.toml && containerd config default > /etc/containerd/config.toml
 
 ADD ./ssh /root/.ssh/
+ADD ./git/* /root/
 
 CMD ["/usr/bin/bash"]
