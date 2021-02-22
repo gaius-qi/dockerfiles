@@ -16,6 +16,7 @@ RUN yum -y install \
       curl \
       vim \
       golang \
+      libseccomp \
       && yum clean all
 
 # install golang
@@ -30,6 +31,8 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" "$GOPATH/pkg" && chmod -R 777 "$GOPATH"
 
 # containerd
 ADD ./containerd/cri-containerd-1.1.0.linux-amd64.tar.gz /
+
+RUN mkdir /etc/containerd && touch /etc/containerd/config.toml && containerd config default > /etc/containerd/config.toml
 
 ADD ./ssh /root/.ssh/
 
