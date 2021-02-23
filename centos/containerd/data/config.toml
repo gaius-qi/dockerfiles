@@ -13,7 +13,7 @@ oom_score = 0
   address = ""
   uid = 0
   gid = 0
-  level = ""
+  level = "debug"
 
 [metrics]
   address = ""
