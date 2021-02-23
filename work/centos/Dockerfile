@@ -17,6 +17,7 @@ RUN yum -y install \
       vim \
       golang \
       libseccomp \
+      telnet \
       && yum clean all
 
 # install golang
