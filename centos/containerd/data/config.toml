@@ -25,6 +25,8 @@ oom_score = 0
 [plugins]
   [plugins.cgroups]
     no_prometheus = false
+  [plugins."io.containerd.grpc.v1.cri".registry.mirrors."harbor.home.jim.plus:33333"]
+    endpoint = ["http://10.15.233.104:65001"]
   [plugins.cri]
     stream_server_address = ""
     stream_server_port = "10010"
@@ -50,7 +52,7 @@ oom_score = 0
     [plugins.cri.registry]
       [plugins.cri.registry.mirrors]
         [plugins.cri.registry.mirrors."harbor.home.jim.plus:33333"]
-          endpoint = ["http://10.15.233.91:65001"]
+          endpoint = ["http://10.15.233.104:65001"]
   [plugins.diff-service]
     default = ["walking"]
   [plugins.linux]
