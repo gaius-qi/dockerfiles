@@ -51,10 +51,6 @@ oom_score = 0
       [plugins.cri.registry.mirrors]
         [plugins.cri.registry.mirrors."harbor.home.jim.plus:33333"]
           endpoint = ["http://10.15.233.121:65001"]
-      [plugins.cri.registry.auths]
-        [plugins.cri.registry.auths."harbor.home.jim.plus:33333"]
-          username = "d7y"
-          password = "bCc5ea1292101"
   [plugins.diff-service]
     default = ["walking"]
   [plugins.linux]
