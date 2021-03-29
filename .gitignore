@@ -45,3 +45,6 @@ Temporary Items
 
 # ssh
 centos/golang/ssh
+
+# containerd
+centos/containerd/data/config.toml
