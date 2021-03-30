@@ -15,7 +15,7 @@ RUN yum -y install \
       telnet \
       && yum clean all
 
-# containerd
+# Containerd
 ADD ./data/cri-containerd-1.1.0.linux-amd64.tar.gz /
 ADD ./data/config.toml /etc/containerd/config.toml
 
