@@ -31,7 +31,7 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" "$GOPATH/pkg" && chmod -R 777 "$GOPATH"
 # goproxy
 ENV GOPROXY https://mirrors.aliyun.com/goproxy,direct
 
-ADD ./ssh /root/.ssh/
+ADD ./_ssh /root/.ssh/
 ADD ./git/* /root/
 
 CMD ["/usr/bin/bash"]k

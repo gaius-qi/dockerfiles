@@ -44,7 +44,7 @@ Temporary Items
 .apdisk
 
 # ssh
-centos/golang/ssh
+centos/golang/_ssh
 
 # containerd
 centos/containerd/data/config.toml
