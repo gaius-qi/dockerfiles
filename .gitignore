@@ -48,3 +48,4 @@ centos/golang/_ssh
 
 # containerd
 centos/containerd/data/config.toml
+centos/cri-containerd/data/config.toml
