@@ -10,6 +10,7 @@ RUN yum -y install \
       git \
       curl \
       vim \
+      make \
       golang \
       libseccomp \
       telnet \
