@@ -2,12 +2,12 @@
 
 ## Usage
 ```bash
-$ docker pull gaiusqi/centos-containerd:1.0.0
-$ docker run -it gaiusqi/centos-containerd:1.0.0
+$ docker pull gaiusqi/centos-cri-containerd:1.0.0
+$ docker run -it gaiusqi/centos-cri-containerd:1.0.0
 ```
 
 ## Development
 ```bash
-$ docker build . -t gaiusqi/centos-containerd:1.0.0
-$ docker push gaiusqi/centos-containerd:1.0.0
+$ docker build . -t gaiusqi/centos-cri-containerd:1.0.0
+$ docker push gaiusqi/centos-cri-containerd:1.0.0
 ```
